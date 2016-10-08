@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1815FEB71DA8E89000179F1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815FEB61DA8E89000179F1C /* AppDelegate.swift */; };
-		1815FEB91DA8E89000179F1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815FEB81DA8E89000179F1C /* ViewController.swift */; };
 		1815FEBC1DA8E89000179F1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1815FEBA1DA8E89000179F1C /* Main.storyboard */; };
 		1815FEBE1DA8E89000179F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1815FEBD1DA8E89000179F1C /* Assets.xcassets */; };
 		1815FEC11DA8E89000179F1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1815FEBF1DA8E89000179F1C /* LaunchScreen.storyboard */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		1815FEB31DA8E89000179F1C /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1815FEB61DA8E89000179F1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1815FEB81DA8E89000179F1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1815FEBB1DA8E89000179F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1815FEBD1DA8E89000179F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1815FEC01DA8E89000179F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,8 +97,8 @@
 		1815FEB51DA8E89000179F1C /* DYZB */ = {
 			isa = PBXGroup;
 			children = (
+				1815FEE71DA8ED5D00179F1C /* Classes */,
 				1815FEB61DA8E89000179F1C /* AppDelegate.swift */,
-				1815FEB81DA8E89000179F1C /* ViewController.swift */,
 				1815FEBA1DA8E89000179F1C /* Main.storyboard */,
 				1815FEBD1DA8E89000179F1C /* Assets.xcassets */,
 				1815FEBF1DA8E89000179F1C /* LaunchScreen.storyboard */,
@@ -126,6 +124,67 @@
 				1815FED81DA8E89100179F1C /* Info.plist */,
 			);
 			path = DYZBUITests;
+			sourceTree = "<group>";
+		};
+		1815FEE71DA8ED5D00179F1C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1815FEE81DA8ED5D00179F1C /* Follow(关注) */,
+				1815FEE91DA8ED5D00179F1C /* Home(首页) */,
+				1815FEEA1DA8ED5D00179F1C /* Live(直播) */,
+				1815FEEB1DA8ED5D00179F1C /* Main(主要) */,
+				1815FEEC1DA8ED5D00179F1C /* Profile(我的) */,
+				1815FEED1DA8ED5D00179F1C /* Tools(工具) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1815FEE81DA8ED5D00179F1C /* Follow(关注) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Follow(关注)";
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		1815FEE91DA8ED5D00179F1C /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Home(首页)";
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1815FEEA1DA8ED5D00179F1C /* Live(直播) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Live(直播)";
+			path = Live;
+			sourceTree = "<group>";
+		};
+		1815FEEB1DA8ED5D00179F1C /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Main(主要)";
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1815FEEC1DA8ED5D00179F1C /* Profile(我的) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Profile(我的)";
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1815FEED1DA8ED5D00179F1C /* Tools(工具) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Tools(工具)";
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +321,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1815FEB91DA8E89000179F1C /* ViewController.swift in Sources */,
 				1815FEB71DA8E89000179F1C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
