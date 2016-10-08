@@ -17,8 +17,8 @@
 		1815FEF01DA8F4E400179F1C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1815FEEE1DA8F4E400179F1C /* Home.storyboard */; };
 		1815FEF51DA8F52800179F1C /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1815FEF31DA8F52800179F1C /* Follow.storyboard */; };
 		1815FEFE1DA8FAEA00179F1C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815FEFB1DA8FAEA00179F1C /* MainViewController.swift */; };
-		1815FF001DA8FBE800179F1C /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1815FEFF1DA8FBE800179F1C /* Live.storyboard */; };
-		1815FF021DA8FBF100179F1C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1815FF011DA8FBF100179F1C /* Profile.storyboard */; };
+		1815FF0D1DA8FEA400179F1C /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1815FF091DA8FEA400179F1C /* Live.storyboard */; };
+		1815FF0E1DA8FEA400179F1C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1815FF0B1DA8FEA400179F1C /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,8 @@
 		1815FEEF1DA8F4E400179F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		1815FEF41DA8F52800179F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Follow.storyboard; sourceTree = "<group>"; };
 		1815FEFB1DA8FAEA00179F1C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		1815FEFF1DA8FBE800179F1C /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Live.storyboard; path = DYZB/Classes/Live.storyboard; sourceTree = SOURCE_ROOT; };
-		1815FF011DA8FBF100179F1C /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = DYZB/Classes/Profile.storyboard; sourceTree = SOURCE_ROOT; };
+		1815FF0A1DA8FEA400179F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Live.storyboard; sourceTree = "<group>"; };
+		1815FF0C1DA8FEA400179F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +151,9 @@
 		1815FEE81DA8ED5D00179F1C /* Follow(关注) */ = {
 			isa = PBXGroup;
 			children = (
+				1815FF031DA8FE5800179F1C /* Controller */,
+				1815FF041DA8FE5800179F1C /* Model */,
+				1815FF051DA8FE5800179F1C /* View */,
 				1815FEF31DA8F52800179F1C /* Follow.storyboard */,
 			);
 			name = "Follow(关注)";
@@ -160,6 +163,9 @@
 		1815FEE91DA8ED5D00179F1C /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				1815FF061DA8FE6600179F1C /* Controller */,
+				1815FF071DA8FE6600179F1C /* Model */,
+				1815FF081DA8FE6600179F1C /* View */,
 				1815FEEE1DA8F4E400179F1C /* Home.storyboard */,
 			);
 			name = "Home(首页)";
@@ -169,7 +175,10 @@
 		1815FEEA1DA8ED5D00179F1C /* Live(直播) */ = {
 			isa = PBXGroup;
 			children = (
-				1815FEFF1DA8FBE800179F1C /* Live.storyboard */,
+				1815FF0F1DA8FEC000179F1C /* Controller */,
+				1815FF101DA8FEC000179F1C /* Model */,
+				1815FF111DA8FEC000179F1C /* View */,
+				1815FF091DA8FEA400179F1C /* Live.storyboard */,
 			);
 			name = "Live(直播)";
 			path = Live;
@@ -189,7 +198,10 @@
 		1815FEEC1DA8ED5D00179F1C /* Profile(我的) */ = {
 			isa = PBXGroup;
 			children = (
-				1815FF011DA8FBF100179F1C /* Profile.storyboard */,
+				1815FF121DA8FECB00179F1C /* Controller */,
+				1815FF131DA8FECB00179F1C /* Model */,
+				1815FF141DA8FECB00179F1C /* View */,
+				1815FF0B1DA8FEA400179F1C /* Profile.storyboard */,
 			);
 			name = "Profile(我的)";
 			path = Profile;
@@ -220,6 +232,90 @@
 			sourceTree = "<group>";
 		};
 		1815FEFD1DA8FAEA00179F1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1815FF031DA8FE5800179F1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1815FF041DA8FE5800179F1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1815FF051DA8FE5800179F1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1815FF061DA8FE6600179F1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1815FF071DA8FE6600179F1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1815FF081DA8FE6600179F1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1815FF0F1DA8FEC000179F1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1815FF101DA8FEC000179F1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1815FF111DA8FEC000179F1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1815FF121DA8FECB00179F1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1815FF131DA8FECB00179F1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1815FF141DA8FECB00179F1C /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -334,12 +430,12 @@
 			files = (
 				1815FEC11DA8E89000179F1C /* LaunchScreen.storyboard in Resources */,
 				1815FEF01DA8F4E400179F1C /* Home.storyboard in Resources */,
-				1815FF021DA8FBF100179F1C /* Profile.storyboard in Resources */,
+				1815FF0E1DA8FEA400179F1C /* Profile.storyboard in Resources */,
 				1815FEE51DA8EC4100179F1C /* Images.xcassets in Resources */,
 				1815FEF51DA8F52800179F1C /* Follow.storyboard in Resources */,
 				1815FEBE1DA8E89000179F1C /* Assets.xcassets in Resources */,
 				1815FEBC1DA8E89000179F1C /* Main.storyboard in Resources */,
-				1815FF001DA8FBE800179F1C /* Live.storyboard in Resources */,
+				1815FF0D1DA8FEA400179F1C /* Live.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +529,24 @@
 				1815FEF41DA8F52800179F1C /* Base */,
 			);
 			name = Follow.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1815FF091DA8FEA400179F1C /* Live.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1815FF0A1DA8FEA400179F1C /* Base */,
+			);
+			name = Live.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1815FF0B1DA8FEA400179F1C /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1815FF0C1DA8FEA400179F1C /* Base */,
+			);
+			name = Profile.storyboard;
 			path = ../..;
 			sourceTree = "<group>";
 		};
