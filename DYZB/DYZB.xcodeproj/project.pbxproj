@@ -30,6 +30,8 @@
 		184F231E1DABC9900089ECA7 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184F231C1DABC9900089ECA7 /* CollectionHeaderView.xib */; };
 		184F23211DABDCAF0089ECA7 /* CollectionNoramlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F231F1DABDCAF0089ECA7 /* CollectionNoramlCell.swift */; };
 		184F23221DABDCAF0089ECA7 /* CollectionNoramlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184F23201DABDCAF0089ECA7 /* CollectionNoramlCell.xib */; };
+		184F23251DABE07C0089ECA7 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F23231DABE07C0089ECA7 /* CollectionPrettyCell.swift */; };
+		184F23261DABE07C0089ECA7 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184F23241DABE07C0089ECA7 /* CollectionPrettyCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		184F231C1DABC9900089ECA7 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		184F231F1DABDCAF0089ECA7 /* CollectionNoramlCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionNoramlCell.swift; sourceTree = "<group>"; };
 		184F23201DABDCAF0089ECA7 /* CollectionNoramlCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNoramlCell.xib; sourceTree = "<group>"; };
+		184F23231DABE07C0089ECA7 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
+		184F23241DABE07C0089ECA7 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +265,8 @@
 				1818C5BE1DAA274D007E6A7F /* PageContentView.swift */,
 				184F231F1DABDCAF0089ECA7 /* CollectionNoramlCell.swift */,
 				184F23201DABDCAF0089ECA7 /* CollectionNoramlCell.xib */,
+				184F23231DABE07C0089ECA7 /* CollectionPrettyCell.swift */,
+				184F23241DABE07C0089ECA7 /* CollectionPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -477,6 +483,7 @@
 				184F231E1DABC9900089ECA7 /* CollectionHeaderView.xib in Resources */,
 				184F23221DABDCAF0089ECA7 /* CollectionNoramlCell.xib in Resources */,
 				1815FEBE1DA8E89000179F1C /* Assets.xcassets in Resources */,
+				184F23261DABE07C0089ECA7 /* CollectionPrettyCell.xib in Resources */,
 				1815FEBC1DA8E89000179F1C /* Main.storyboard in Resources */,
 				1815FF0D1DA8FEA400179F1C /* Live.storyboard in Resources */,
 			);
@@ -512,6 +519,7 @@
 				1818C5BF1DAA274D007E6A7F /* PageContentView.swift in Sources */,
 				184F23211DABDCAF0089ECA7 /* CollectionNoramlCell.swift in Sources */,
 				1818C5B91DA93126007E6A7F /* UIBarButtonItem-Extension.swift in Sources */,
+				184F23251DABE07C0089ECA7 /* CollectionPrettyCell.swift in Sources */,
 				1818C5BD1DAA1A69007E6A7F /* Common.swift in Sources */,
 				1815FF161DA902E400179F1C /* HomeViewController.swift in Sources */,
 			);
