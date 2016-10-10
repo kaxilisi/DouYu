@@ -25,6 +25,11 @@
 		1818C5BD1DAA1A69007E6A7F /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818C5BC1DAA1A69007E6A7F /* Common.swift */; };
 		1818C5BF1DAA274D007E6A7F /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818C5BE1DAA274D007E6A7F /* PageContentView.swift */; };
 		1818C5C11DAA2A80007E6A7F /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818C5C01DAA2A80007E6A7F /* UIColor-Extension.swift */; };
+		184F231A1DAB86D40089ECA7 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F23191DAB86D40089ECA7 /* RecommendViewController.swift */; };
+		184F231D1DABC9900089ECA7 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F231B1DABC9900089ECA7 /* CollectionHeaderView.swift */; };
+		184F231E1DABC9900089ECA7 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184F231C1DABC9900089ECA7 /* CollectionHeaderView.xib */; };
+		184F23211DABDCAF0089ECA7 /* CollectionNoramlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F231F1DABDCAF0089ECA7 /* CollectionNoramlCell.swift */; };
+		184F23221DABDCAF0089ECA7 /* CollectionNoramlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184F23201DABDCAF0089ECA7 /* CollectionNoramlCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,11 @@
 		1818C5BC1DAA1A69007E6A7F /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		1818C5BE1DAA274D007E6A7F /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		1818C5C01DAA2A80007E6A7F /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		184F23191DAB86D40089ECA7 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		184F231B1DABC9900089ECA7 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		184F231C1DABC9900089ECA7 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
+		184F231F1DABDCAF0089ECA7 /* CollectionNoramlCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionNoramlCell.swift; sourceTree = "<group>"; };
+		184F23201DABDCAF0089ECA7 /* CollectionNoramlCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNoramlCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +259,8 @@
 			children = (
 				1818C5BA1DAA1870007E6A7F /* PageTitleView.swift */,
 				1818C5BE1DAA274D007E6A7F /* PageContentView.swift */,
+				184F231F1DABDCAF0089ECA7 /* CollectionNoramlCell.swift */,
+				184F23201DABDCAF0089ECA7 /* CollectionNoramlCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,6 +291,7 @@
 			children = (
 				1815FEEE1DA8F4E400179F1C /* Home.storyboard */,
 				1815FF151DA902E400179F1C /* HomeViewController.swift */,
+				184F23191DAB86D40089ECA7 /* RecommendViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -293,6 +306,8 @@
 		1815FF081DA8FE6600179F1C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				184F231B1DABC9900089ECA7 /* CollectionHeaderView.swift */,
+				184F231C1DABC9900089ECA7 /* CollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -459,6 +474,8 @@
 				1815FF0E1DA8FEA400179F1C /* Profile.storyboard in Resources */,
 				1815FEE51DA8EC4100179F1C /* Images.xcassets in Resources */,
 				1815FEF51DA8F52800179F1C /* Follow.storyboard in Resources */,
+				184F231E1DABC9900089ECA7 /* CollectionHeaderView.xib in Resources */,
+				184F23221DABDCAF0089ECA7 /* CollectionNoramlCell.xib in Resources */,
 				1815FEBE1DA8E89000179F1C /* Assets.xcassets in Resources */,
 				1815FEBC1DA8E89000179F1C /* Main.storyboard in Resources */,
 				1815FF0D1DA8FEA400179F1C /* Live.storyboard in Resources */,
@@ -487,10 +504,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1815FEB71DA8E89000179F1C /* AppDelegate.swift in Sources */,
+				184F231D1DABC9900089ECA7 /* CollectionHeaderView.swift in Sources */,
 				1818C5C11DAA2A80007E6A7F /* UIColor-Extension.swift in Sources */,
+				184F231A1DAB86D40089ECA7 /* RecommendViewController.swift in Sources */,
 				1815FEFE1DA8FAEA00179F1C /* MainViewController.swift in Sources */,
 				1818C5BB1DAA1870007E6A7F /* PageTitleView.swift in Sources */,
 				1818C5BF1DAA274D007E6A7F /* PageContentView.swift in Sources */,
+				184F23211DABDCAF0089ECA7 /* CollectionNoramlCell.swift in Sources */,
 				1818C5B91DA93126007E6A7F /* UIBarButtonItem-Extension.swift in Sources */,
 				1818C5BD1DAA1A69007E6A7F /* Common.swift in Sources */,
 				1815FF161DA902E400179F1C /* HomeViewController.swift in Sources */,
@@ -675,7 +695,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youngc.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -689,7 +709,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youngc.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
