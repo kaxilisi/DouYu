@@ -20,26 +20,26 @@ private let kHeaderViewID = "kHeaderViewID"
 
 class RecommendViewController: UIViewController {
 
-    private lazy var collectionView : UICollectionView = {[unowned self] in
+    fileprivate lazy var collectionView : UICollectionView = {[unowned self] in
         
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSizeMake(kItemW, kNormalItemH)
+        layout.itemSize = CGSize(width: kItemW, height: kNormalItemH)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = kItemMargin
         layout.sectionInset = UIEdgeInsetsMake(0, kItemMargin, 0, kItemMargin)
-        layout.headerReferenceSize = CGSizeMake(kScreenW, kHeaderViewH)
+        layout.headerReferenceSize = CGSize(width: kScreenW, height: kHeaderViewH)
         
         let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
         
-        collectionView.backgroundColor = UIColor.whiteColor()
+        collectionView.backgroundColor = UIColor.white
         
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
-        collectionView.registerNib(UINib(nibName: "CollectionNoramlCell", bundle: nil), forCellWithReuseIdentifier: kNormalCellID)
-        collectionView.registerNib(UINib(nibName: "CollectionPrettyCell", bundle: nil), forCellWithReuseIdentifier: kPrettyCellID)
+        collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        collectionView.register(UINib(nibName: "CollectionNoramlCell", bundle: nil), forCellWithReuseIdentifier: kNormalCellID)
+        collectionView.register(UINib(nibName: "CollectionPrettyCell", bundle: nil), forCellWithReuseIdentifier: kPrettyCellID)
         
-        collectionView.registerNib(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
+        collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
 //        collectionView.registerClass(UICollectionReusableView.self, forSupplementaryViewOfKind:UICollectionElementKindSectionHeader , withReuseIdentifier: kHeaderViewID)
         
         
@@ -50,7 +50,7 @@ class RecommendViewController: UIViewController {
         super.viewDidLoad()
         
 
-        view.backgroundColor = UIColor.purpleColor()
+        view.backgroundColor = UIColor.purple
         setupUI()
         
 
@@ -62,43 +62,43 @@ class RecommendViewController: UIViewController {
 
 //MARK:-设置UI界面内容
 extension RecommendViewController{
-    private func setupUI(){
+    fileprivate func setupUI(){
         view.addSubview(collectionView)
     }
     
 }
 
 extension RecommendViewController : UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 12
     }
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if section == 0{
             return 8
         }
         return 4
     }
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         var cell : UICollectionViewCell!
-        if indexPath.section == 1{
-            cell = collectionView.dequeueReusableCellWithReuseIdentifier(kPrettyCellID, forIndexPath: indexPath)
+        if (indexPath as NSIndexPath).section == 1{
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath)
         } else{
-            cell = collectionView.dequeueReusableCellWithReuseIdentifier(kNormalCellID, forIndexPath: indexPath)
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath)
         }
 //        cell.backgroundColor = UIColor.redColor()
         return cell
     }
-    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-        let headerview = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID, forIndexPath: indexPath)
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let headerview = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID, for: indexPath)
 //        headerview.backgroundColor = UIColor.orangeColor()
         return headerview
     }
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize{
-        if indexPath.section == 1 {
-            return CGSizeMake(kItemW, kPrettyItemH)
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
+        if (indexPath as NSIndexPath).section == 1 {
+            return CGSize(width: kItemW, height: kPrettyItemH)
         }
-        return CGSizeMake(kItemW, kNormalItemH)
+        return CGSize(width: kItemW, height: kNormalItemH)
     }
 }
 

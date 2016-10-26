@@ -9,7 +9,7 @@
 import UIKit
 // MARK:-
 protocol PageTitleViewDelegate : class {
-    func pageTitleView(titleView : PageTitleView ,selectedIndex index: Int)
+    func pageTitleView(_ titleView : PageTitleView ,selectedIndex index: Int)
 }
 
 
@@ -24,12 +24,12 @@ private let kSelectColor :(CGFloat, CGFloat,CGFloat)  = (255,120,0)
 
 class PageTitleView: UIView {
     
-    private var currentIndex : Int = 0
-    private var titles : [String]
+    fileprivate var currentIndex : Int = 0
+    fileprivate var titles : [String]
     weak var delegate : PageTitleViewDelegate?
     
-    private lazy var titleLabels :[UILabel] = [UILabel]()
-    private lazy var scrollView :UIScrollView = {
+    fileprivate lazy var titleLabels :[UILabel] = [UILabel]()
+    fileprivate lazy var scrollView :UIScrollView = {
         let scrollView = UIScrollView()
         
         scrollView.showsHorizontalScrollIndicator = false
@@ -39,9 +39,9 @@ class PageTitleView: UIView {
         return scrollView
         
     }()
-    private lazy var scrollLine:UIView = {
+    fileprivate lazy var scrollLine:UIView = {
         let scrollLine = UIView()
-        scrollLine.backgroundColor = UIColor.orangeColor()
+        scrollLine.backgroundColor = UIColor.orange
         return scrollLine
     }()
     
@@ -59,7 +59,7 @@ class PageTitleView: UIView {
 }
 
 extension PageTitleView{
-    private func setupUI(){
+    fileprivate func setupUI(){
         addSubview(scrollView)
         scrollView.frame = bounds
         
@@ -67,52 +67,52 @@ extension PageTitleView{
         
         setupBottomLineAndScrollLine()
     }
-    private func setupTitleLebels(){
+    fileprivate func setupTitleLebels(){
         let labelW :CGFloat = frame.width/CGFloat(titles.count)
         let labelH :CGFloat = frame.height - scrollLineH
         let labelY :CGFloat = 0
-        for (index,title) in titles.enumerate() {
+        for (index,title) in titles.enumerated() {
             let label = UILabel()
             
             label.text = title
             label.tag = index
-            label.font = UIFont.systemFontOfSize(16.0)
+            label.font = UIFont.systemFont(ofSize: 16.0)
             label.textColor = UIColor(r: kNormalColor.0, g: kNormalColor.1, b: kNormalColor.2)
-            label.textAlignment = .Center
+            label.textAlignment = .center
             
 
             let labelX :CGFloat = labelW * CGFloat(index)
             
-            label.frame = CGRectMake(labelX, labelY, labelW, labelH)
+            label.frame = CGRect(x: labelX, y: labelY, width: labelW, height: labelH)
             scrollView.addSubview(label)
             titleLabels.append(label)
             
             //添加手势
-            label.userInteractionEnabled = true
+            label.isUserInteractionEnabled = true
             let tapGes = UITapGestureRecognizer(target: self, action: #selector(self.titleLabelClick(_:)))
             label.addGestureRecognizer(tapGes)
         }
     }
-    private func  setupBottomLineAndScrollLine(){
+    fileprivate func  setupBottomLineAndScrollLine(){
         let  bottomLine = UIView()
         
-        bottomLine.backgroundColor = UIColor.lightGrayColor()
+        bottomLine.backgroundColor = UIColor.lightGray
         let  lineH : CGFloat = 0.5
         
-        bottomLine.frame = CGRectMake(0, frame.height - lineH, frame.width, lineH)
+        bottomLine.frame = CGRect(x: 0, y: frame.height - lineH, width: frame.width, height: lineH)
         
         addSubview(bottomLine)
         guard let firstLabel = titleLabels.first else {return}
         firstLabel.textColor = UIColor(r: kSelectColor.0, g: kSelectColor.1, b: kSelectColor.2)
         scrollView.addSubview(scrollLine)
         
-        scrollLine.frame = CGRectMake(firstLabel.frame.origin.x, frame.height - scrollLineH, firstLabel.frame.width, scrollLineH)
+        scrollLine.frame = CGRect(x: firstLabel.frame.origin.x, y: frame.height - scrollLineH, width: firstLabel.frame.width, height: scrollLineH)
     }
 }
 
 //MARK:- 
 extension PageTitleView{
-    @objc private func titleLabelClick(tapGes: UITapGestureRecognizer){
+    @objc fileprivate func titleLabelClick(_ tapGes: UITapGestureRecognizer){
         guard let currentLabel = tapGes.view as? UILabel else {return}
         let oldLabel = titleLabels[currentIndex]
         
@@ -123,15 +123,15 @@ extension PageTitleView{
         currentIndex = currentLabel.tag
         
         let  scrollLineX = CGFloat(currentLabel.tag) * scrollLine.frame.width
-        UIView.animateWithDuration(0.3){
+        UIView.animate(withDuration: 0.3, animations: {
             self.scrollLine.frame.origin.x = scrollLineX
-        }
+        })
         delegate?.pageTitleView(self, selectedIndex: currentIndex)
     }
 }
 
 extension PageTitleView {
-    func setTitleVWithProgress(progress : CGFloat ,sourceIndex : Int , targetIndex :Int){
+    func setTitleVWithProgress(_ progress : CGFloat ,sourceIndex : Int , targetIndex :Int){
         let sourceLabel = titleLabels[sourceIndex]
         let targetLabel = titleLabels[targetIndex]
         

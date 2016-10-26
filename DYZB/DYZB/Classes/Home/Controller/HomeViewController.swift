@@ -12,7 +12,7 @@ private let kTitleViewH : CGFloat = 40
 
 class HomeViewController: UIViewController {
 
-    private lazy var pageTitleView :PageTitleView = {[weak self] in
+    fileprivate lazy var pageTitleView :PageTitleView = {[weak self] in
         
         let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width: kScreenW, height: kTitleViewH )
         let titles = ["推荐","游戏","娱乐","趣玩"]
@@ -22,9 +22,9 @@ class HomeViewController: UIViewController {
         
     }()
     
-    private lazy var pageContentView :PageContentView = {[weak self] in
+    fileprivate lazy var pageContentView :PageContentView = {[weak self] in
         let contentViewH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabBarH
-        let contentFrame = CGRectMake(0, kStatusBarH + kNavigationBarH + kTitleViewH, kScreenW, contentViewH)
+        let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentViewH)
         var childVcs = [UIViewController]()
         
         childVcs.append(RecommendViewController())
@@ -50,7 +50,7 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController{
-    private func setupUI(){
+    fileprivate func setupUI(){
         
         automaticallyAdjustsScrollViewInsets = false
         setupNavigationBar()
@@ -59,11 +59,11 @@ extension HomeViewController{
         view.addSubview(pageTitleView)
         
         view.addSubview(pageContentView)
-        pageContentView.backgroundColor = UIColor.blueColor()
+        pageContentView.backgroundColor = UIColor.blue
     }
-    private func setupNavigationBar(){
+    fileprivate func setupNavigationBar(){
         let btn = UIButton()
-        btn.setImage(UIImage(named: "logo"), forState: .Normal)
+        btn.setImage(UIImage(named: "logo"), for: UIControlState())
         btn.sizeToFit()
     
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView:btn)
@@ -84,14 +84,14 @@ extension HomeViewController{
 }
 
 extension HomeViewController : PageTitleViewDelegate{
-    func pageTitleView(titleView: PageTitleView, selectedIndex index: Int) {
+    func pageTitleView(_ titleView: PageTitleView, selectedIndex index: Int) {
         pageContentView.setCurrentIndex(index)
     }
 
 }
 
 extension HomeViewController :PagecontentViewDelegate{
-    func pageContentView(contentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+    func pageContentView(_ contentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
         pageTitleView.setTitleVWithProgress(progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
         print("000")
     }
