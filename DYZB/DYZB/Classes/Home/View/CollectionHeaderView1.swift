@@ -2,13 +2,14 @@
 //  CollectionHeaderView.swift
 //  DYZB
 //
-//  Created by apple on 2016/10/8.
+//  Created by apple on 2016/10/10.
 //  Copyright © 2016年 apple. All rights reserved.
 //
 
 import UIKit
 
 class CollectionHeaderView: UICollectionReusableView {
+
     
     // MARK:- 控件属性
     @IBOutlet weak var titleLabel: UILabel!

@@ -19,7 +19,7 @@ private let kPrettyCellID = "kPrettyCellID"
 private let kHeaderViewID = "kHeaderViewID"
 
 class RecommendViewController: UIViewController {
-
+    fileprivate lazy var recommendVM : RecommendViewModel = RecommendViewModel()
     fileprivate lazy var collectionView : UICollectionView = {[unowned self] in
         
         let layout = UICollectionViewFlowLayout()
@@ -52,7 +52,7 @@ class RecommendViewController: UIViewController {
 
         view.backgroundColor = UIColor.purple
         setupUI()
-        
+        loadData()
 
     }
 
@@ -68,15 +68,25 @@ extension RecommendViewController{
     
 }
 
+//MARK:请求数据
+
+extension RecommendViewController{
+    fileprivate func loadData(){
+        recommendVM.requestData { 
+            self.collectionView.reloadData()
+        }
+    
+    }
+}
+
 extension RecommendViewController : UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12
+        return recommendVM.anchorGroups.count
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0{
-            return 8
-        }
-        return 4
+        let group = recommendVM.anchorGroups[section]
+        
+        return group.anchors.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
@@ -91,7 +101,10 @@ extension RecommendViewController : UICollectionViewDataSource,UICollectionViewD
     }
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let headerview = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID, for: indexPath)
-//        headerview.backgroundColor = UIColor.orangeColor()
+        
+        let group = recommendVM.anchorGroups[indexPath.section]
+        
+//        headerview.
         return headerview
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{

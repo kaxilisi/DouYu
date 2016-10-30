@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1804D0AE1DC456E2009E56A1 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804D0AD1DC456E2009E56A1 /* NetworkTools.swift */; };
+		1804D0B41DC45A85009E56A1 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804D0B31DC45A85009E56A1 /* RecommendViewModel.swift */; };
+		1804D0B81DC45D0D009E56A1 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804D0B71DC45D0D009E56A1 /* NSDate-Extension.swift */; };
+		1804D0BA1DC46023009E56A1 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804D0B91DC46023009E56A1 /* AnchorModel.swift */; };
+		1804D0BD1DC473C9009E56A1 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804D0BB1DC473C9009E56A1 /* CollectionHeaderView.swift */; };
+		1804D0BE1DC473C9009E56A1 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1804D0BC1DC473C9009E56A1 /* CollectionHeaderView.xib */; };
+		181474BF1DC3A5B5001C83A5 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181474BE1DC3A5B5001C83A5 /* AnchorGroup.swift */; };
 		1815FEB71DA8E89000179F1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815FEB61DA8E89000179F1C /* AppDelegate.swift */; };
 		1815FEBC1DA8E89000179F1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1815FEBA1DA8E89000179F1C /* Main.storyboard */; };
 		1815FEBE1DA8E89000179F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1815FEBD1DA8E89000179F1C /* Assets.xcassets */; };
@@ -26,8 +33,6 @@
 		1818C5BF1DAA274D007E6A7F /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818C5BE1DAA274D007E6A7F /* PageContentView.swift */; };
 		1818C5C11DAA2A80007E6A7F /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818C5C01DAA2A80007E6A7F /* UIColor-Extension.swift */; };
 		184F231A1DAB86D40089ECA7 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F23191DAB86D40089ECA7 /* RecommendViewController.swift */; };
-		184F231D1DABC9900089ECA7 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F231B1DABC9900089ECA7 /* CollectionHeaderView.swift */; };
-		184F231E1DABC9900089ECA7 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184F231C1DABC9900089ECA7 /* CollectionHeaderView.xib */; };
 		184F23211DABDCAF0089ECA7 /* CollectionNoramlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F231F1DABDCAF0089ECA7 /* CollectionNoramlCell.swift */; };
 		184F23221DABDCAF0089ECA7 /* CollectionNoramlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184F23201DABDCAF0089ECA7 /* CollectionNoramlCell.xib */; };
 		184F23251DABE07C0089ECA7 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F23231DABE07C0089ECA7 /* CollectionPrettyCell.swift */; };
@@ -55,6 +60,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1804D0AD1DC456E2009E56A1 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		1804D0B31DC45A85009E56A1 /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		1804D0B71DC45D0D009E56A1 /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		1804D0B91DC46023009E56A1 /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		1804D0BB1DC473C9009E56A1 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		1804D0BC1DC473C9009E56A1 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
+		181474BE1DC3A5B5001C83A5 /* AnchorGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
 		1815FEB31DA8E89000179F1C /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1815FEB61DA8E89000179F1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1815FEBB1DA8E89000179F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,8 +92,6 @@
 		1818C5BE1DAA274D007E6A7F /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		1818C5C01DAA2A80007E6A7F /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		184F23191DAB86D40089ECA7 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
-		184F231B1DABC9900089ECA7 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
-		184F231C1DABC9900089ECA7 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		184F231F1DABDCAF0089ECA7 /* CollectionNoramlCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionNoramlCell.swift; sourceTree = "<group>"; };
 		184F23201DABDCAF0089ECA7 /* CollectionNoramlCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNoramlCell.xib; sourceTree = "<group>"; };
 		184F23231DABE07C0089ECA7 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
@@ -125,6 +135,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1804D0AF1DC4573F009E56A1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1804D0B21DC45A64009E56A1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1804D0B31DC45A85009E56A1 /* RecommendViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		1815FEAA1DA8E89000179F1C = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +231,7 @@
 		1815FEE91DA8ED5D00179F1C /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				1804D0B21DC45A64009E56A1 /* ViewModel */,
 				1815FF061DA8FE6600179F1C /* Controller */,
 				1815FF071DA8FE6600179F1C /* Model */,
 				1815FF081DA8FE6600179F1C /* View */,
@@ -229,6 +255,7 @@
 		1815FEEB1DA8ED5D00179F1C /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
+				1804D0AF1DC4573F009E56A1 /* ViewModel */,
 				1815FEFA1DA8FAEA00179F1C /* Controller */,
 				1815FEFC1DA8FAEA00179F1C /* Model */,
 				1815FEFD1DA8FAEA00179F1C /* View */,
@@ -253,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				1818C5B71DA930BA007E6A7F /* Extension */,
+				1804D0AD1DC456E2009E56A1 /* NetworkTools.swift */,
 				1818C5BC1DAA1A69007E6A7F /* Common.swift */,
 			);
 			name = "Tools(工具)";
@@ -271,6 +299,8 @@
 		1815FEFC1DA8FAEA00179F1C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				181474BE1DC3A5B5001C83A5 /* AnchorGroup.swift */,
+				1804D0B91DC46023009E56A1 /* AnchorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -329,8 +359,8 @@
 		1815FF081DA8FE6600179F1C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				184F231B1DABC9900089ECA7 /* CollectionHeaderView.swift */,
-				184F231C1DABC9900089ECA7 /* CollectionHeaderView.xib */,
+				1804D0BB1DC473C9009E56A1 /* CollectionHeaderView.swift */,
+				1804D0BC1DC473C9009E56A1 /* CollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -382,6 +412,7 @@
 			children = (
 				1818C5B81DA93126007E6A7F /* UIBarButtonItem-Extension.swift */,
 				1818C5C01DAA2A80007E6A7F /* UIColor-Extension.swift */,
+				1804D0B71DC45D0D009E56A1 /* NSDate-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -533,12 +564,12 @@
 				1815FF0E1DA8FEA400179F1C /* Profile.storyboard in Resources */,
 				1815FEE51DA8EC4100179F1C /* Images.xcassets in Resources */,
 				1815FEF51DA8F52800179F1C /* Follow.storyboard in Resources */,
-				184F231E1DABC9900089ECA7 /* CollectionHeaderView.xib in Resources */,
 				184F23221DABDCAF0089ECA7 /* CollectionNoramlCell.xib in Resources */,
 				1815FEBE1DA8E89000179F1C /* Assets.xcassets in Resources */,
 				184F23261DABE07C0089ECA7 /* CollectionPrettyCell.xib in Resources */,
 				1815FEBC1DA8E89000179F1C /* Main.storyboard in Resources */,
 				1815FF0D1DA8FEA400179F1C /* Live.storyboard in Resources */,
+				1804D0BE1DC473C9009E56A1 /* CollectionHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -701,18 +732,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1804D0AE1DC456E2009E56A1 /* NetworkTools.swift in Sources */,
 				1815FEB71DA8E89000179F1C /* AppDelegate.swift in Sources */,
-				184F231D1DABC9900089ECA7 /* CollectionHeaderView.swift in Sources */,
 				1818C5C11DAA2A80007E6A7F /* UIColor-Extension.swift in Sources */,
 				184F231A1DAB86D40089ECA7 /* RecommendViewController.swift in Sources */,
 				1815FEFE1DA8FAEA00179F1C /* MainViewController.swift in Sources */,
+				181474BF1DC3A5B5001C83A5 /* AnchorGroup.swift in Sources */,
 				1818C5BB1DAA1870007E6A7F /* PageTitleView.swift in Sources */,
 				1818C5BF1DAA274D007E6A7F /* PageContentView.swift in Sources */,
+				1804D0BD1DC473C9009E56A1 /* CollectionHeaderView.swift in Sources */,
 				184F23211DABDCAF0089ECA7 /* CollectionNoramlCell.swift in Sources */,
+				1804D0B81DC45D0D009E56A1 /* NSDate-Extension.swift in Sources */,
 				1818C5B91DA93126007E6A7F /* UIBarButtonItem-Extension.swift in Sources */,
 				184F23251DABE07C0089ECA7 /* CollectionPrettyCell.swift in Sources */,
 				1818C5BD1DAA1A69007E6A7F /* Common.swift in Sources */,
+				1804D0B41DC45A85009E56A1 /* RecommendViewModel.swift in Sources */,
 				1815FF161DA902E400179F1C /* HomeViewController.swift in Sources */,
+				1804D0BA1DC46023009E56A1 /* AnchorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
