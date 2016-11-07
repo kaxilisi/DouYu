@@ -64,7 +64,9 @@ extension RecommendViewModel{
             
             for dict in dataArray{
                 let group = AnchorGroup(dict)
-                self.anchorGroups.append(group)
+                if group.push_vertical_screen == "0"{
+                    self.anchorGroups.append(group)
+                }
             }
             dGroup.leave()
         }

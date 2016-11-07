@@ -25,6 +25,8 @@ class AnchorGroup: NSObject {
     ///模型对象数据
     lazy var anchors : [AnchorModel] = [AnchorModel]()
     
+    var push_vertical_screen : String = ""
+    
     override init(){
         
     }
