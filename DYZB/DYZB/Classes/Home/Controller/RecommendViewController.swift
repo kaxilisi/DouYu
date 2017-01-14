@@ -73,6 +73,7 @@ extension RecommendViewController{
         collectionView.addSubview(cycleView)
         
         collectionView.contentInset = UIEdgeInsetsMake(kCycleViewH, 0, 0, 0)
+
     }
     
 }
@@ -83,6 +84,10 @@ extension RecommendViewController{
     fileprivate func loadData(){
         recommendVM.requestData { 
             self.collectionView.reloadData()
+        }
+        recommendVM.requestCycleData { 
+            self.cycleView.cycleModels = self.recommendVM.cycleModels
+            
         }
     
     }

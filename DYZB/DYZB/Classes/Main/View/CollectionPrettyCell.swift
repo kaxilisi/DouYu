@@ -18,7 +18,7 @@ class CollectionPrettyCell: CollectionBaseCell {
     override var anchor : AnchorModel? {
         didSet {
             super.anchor = anchor
-            cityBtn.setTitle(anchor?.nickname, for: .normal)
+            cityBtn.setTitle(anchor?.anchor_city, for: .normal)
             
         }
     }

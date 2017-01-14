@@ -9,7 +9,8 @@
 import UIKit
 
 class RecommendViewModel{
-    lazy var anchorGroups :[AnchorGroup] = [AnchorGroup]()
+    lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]()
+    lazy var cycleModels : [CycleModel] = [CycleModel]()
     fileprivate lazy var bigDataGroup : AnchorGroup = AnchorGroup()
     fileprivate lazy var prettyGroup : AnchorGroup = AnchorGroup()
 }
@@ -77,4 +78,20 @@ extension RecommendViewModel{
             finishCallback()
         }
     }
-}
+    func requestCycleData(_ finishCallback : @escaping () -> ()){
+        NetworkTools.requestData(.get, URLString: "http://capi.douyucdn.cn/api/v1/slide/6", parameters: ["version" : "2.401"]){ (result) in
+            guard let resultDict = result as? [String : NSObject] else {return}
+            guard let dataArray = resultDict["data"] as? [[String : NSObject]] else {return}
+            //字典转模型
+            for dict in dataArray {
+                self.cycleModels.append(CycleModel(dict))
+            }
+            
+            finishCallback()
+            
+        }
+
+        
+        }
+    }
+
